@@ -41,7 +41,6 @@ Phone: +19396407683
  
 [YouTube](https://www.youtube.com/@fnfgame-w2t8o)
 [Facebook](https://www.facebook.com/people/FNF/61575186193213/)
-[Vimeo](https://vimeo.com/user239219264)
 [X](https://x.com/fnf_game61704)
 [Goodreads](https://www.goodreads.com/user/show/189722268-fnf-game)
 
