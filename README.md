@@ -36,10 +36,15 @@ As you progress through FNF, pay attention to:
 Experience the thrill of Friday Night Funkin', where music and rhythm become an exciting battle! Join the global community, share your best scores and challenge your friends to beat your records. Stay up to date with the latest news, tips and exclusive events by following us on social media. Join the conversation, show off your skills and connect with other players in the FNF community!
 
 Address Country: United States
+
 Address Locality: Leominster
+
 Address Region: Massachusetts
+
 Street Address: 11 Jungle Road
+
 Postal Code: 01453
+
 Phone number: 568-934-9361
 
  
