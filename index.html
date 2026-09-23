@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friday Night Funkin' | Rhythm Battles, Mods & Music</title>
+  <meta name="description" content="Discover Friday Night Funkin', its rhythm-battle gameplay, controls, characters, mods, and tips for keeping every musical duel on beat.">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{--ink:#17172b;--muted:#696a7c;--pink:#ff3f8e;--cyan:#38d8ff;--yellow:#ffd84a;--card:#fff;--bg:#f7f5ff}
+    body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+    a{text-decoration:none;color:inherit}
+    .wrap{width:min(1120px,calc(100% - 36px));margin:auto}
+    header{background:#17172b;color:white;position:sticky;top:0;z-index:10;box-shadow:0 4px 20px #17172b22}
+    nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .logo{font-size:25px;font-weight:900;letter-spacing:-1px}.logo span{color:var(--pink)}
+    .links{display:flex;gap:25px;font-size:14px;font-weight:700}.links a:hover{color:var(--cyan)}
+    .hero{padding:92px 0 82px;background:
+      radial-gradient(circle at 15% 20%,#38d8ff35,transparent 25%),
+      radial-gradient(circle at 85% 20%,#ff3f8e38,transparent 27%),
+      linear-gradient(135deg,#1d1c38,#302251);color:white;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:55px;align-items:center}
+    .tag{display:inline-block;padding:7px 13px;border:1px solid #ffffff40;border-radius:999px;background:#ffffff12;color:#bff4ff;font-weight:700;font-size:13px;margin-bottom:18px}
+    h1{font-size:clamp(45px,7vw,78px);line-height:.98;letter-spacing:-4px;margin-bottom:24px}
+    .hero h1 span{color:var(--pink);text-shadow:4px 4px 0 #38d8ff55}
+    .hero p{font-size:18px;color:#e5e2f2;max-width:680px}
+    .cta{display:inline-block;margin-top:28px;background:var(--yellow);color:#1a1830;padding:13px 22px;border-radius:10px;font-weight:900;box-shadow:5px 5px 0 var(--pink)}
+    .battle-card{background:#ffffff0e;border:1px solid #ffffff25;border-radius:28px;padding:30px;transform:rotate(2deg);box-shadow:18px 18px 0 #ff3f8e25}
+    .screen{height:260px;border-radius:19px;background:linear-gradient(145deg,#3bd9ff,#7567ff 52%,#ff3f8e);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:900;font-size:36px;line-height:1.05;padding:25px}
+    .notes{display:flex;justify-content:center;gap:13px;margin-top:22px}.note{width:45px;height:45px;border-radius:11px;background:#ffffff17;display:grid;place-items:center;font-size:22px}
+    section{padding:78px 0}
+    .section-head{text-align:center;max-width:720px;margin:0 auto 40px}.section-head h2{font-size:36px;letter-spacing:-1.5px;margin-bottom:10px}.section-head p{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:white;border:1px solid #e8e5f1;border-radius:18px;padding:27px;box-shadow:0 10px 30px #26213a0b}
+    .icon{width:48px;height:48px;border-radius:14px;background:#fff0f7;display:grid;place-items:center;font-size:24px;margin-bottom:17px}
+    .card h3{font-size:20px;margin-bottom:8px}.card p{color:var(--muted);font-size:15px}
+    .dark{background:#19182d;color:white}.dark .section-head p{color:#c3c1d1}
+    .how{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+    .panel{background:#24223c;border:1px solid #ffffff12;border-radius:20px;padding:30px}
+    .panel h3{font-size:23px;margin-bottom:15px;color:var(--cyan)}
+    .panel p{color:#cfccdc}
+    .keys{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+    kbd{background:white;color:#1c1a30;padding:9px 13px;border-radius:8px;font-weight:900;box-shadow:0 4px 0 #aaa}
+    .tips{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .tip{background:white;border-left:5px solid var(--pink);padding:23px;border-radius:12px;box-shadow:0 8px 25px #2520390c}
+    .tip strong{display:block;margin-bottom:5px}.tip span{color:var(--muted);font-size:15px}
+    footer{background:#111020;color:#aaa9b8;padding:34px 0;text-align:center;font-size:14px}
+    footer strong{color:white}
+    @media(max-width:800px){
+      .links{display:none}.hero{padding:65px 0}.hero-grid,.how{grid-template-columns:1fr}.battle-card{display:none}
+      .cards{grid-template-columns:1fr}.tips{grid-template-columns:1fr}h1{letter-spacing:-2px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="#">FNF<span>Beat</span></a>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#gameplay">Gameplay</a>
+        <a href="#tips">Tips</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="tag">RHYTHM • MUSIC • BATTLES</div>
+        <h1>Friday Night <span>Funkin'</span></h1>
+        <p>Friday Night Funkin' puts musical showdowns at the center of every challenge. Follow the arrows, stay locked to the beat, and discover why its characters, songs, and fan-made mods keep rhythm-game players coming back.</p>
+        <a class="cta" href="#gameplay">Explore the Gameplay ↓</a>
+      </div>
+      <div class="battle-card">
+        <div class="screen">KEEP THE<br>BEAT!</div>
+        <div class="notes"><div class="note">←</div><div class="note">↓</div><div class="note">↑</div><div class="note">→</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What Makes FNF Stand Out?</h2>
+        <p>Simple inputs meet expressive music battles, memorable rivals, and an enormous modding scene.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="icon">♫</div><h3>Rhythm Battles</h3><p>Match directional notes as they reach their targets. Accurate timing keeps the performance alive while mistakes shift momentum toward your opponent.</p></article>
+        <article class="card"><div class="icon">★</div><h3>Memorable Opponents</h3><p>Each encounter can change the mood through distinctive characters, visual themes, vocals, and chart patterns that give battles their own identity.</p></article>
+        <article class="card"><div class="icon">⚡</div><h3>Creative Mods</h3><p>Community projects expand the familiar formula with original songs, remixes, characters, mechanics, stories, and increasingly demanding note charts.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" id="gameplay">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>How the Rhythm Battles Work</h2>
+        <p>The controls are approachable, but consistent timing matters more as songs become faster and patterns grow denser.</p>
+      </div>
+      <div class="how">
+        <div class="panel">
+          <h3>Follow the Notes</h3>
+          <p>Watch the incoming arrows and press the matching direction when a note reaches its target. Long notes may need to be held, while rapid sequences reward reading ahead instead of reacting to one arrow at a time.</p>
+          <div class="keys"><kbd>←</kbd><kbd>↓</kbd><kbd>↑</kbd><kbd>→</kbd><kbd>WASD</kbd></div>
+        </div>
+        <div class="panel">
+          <h3>Protect Your Momentum</h3>
+          <p>Clean streaks help maintain control of the battle. When a chart becomes difficult, focus on the rhythm and recurring patterns rather than tapping faster than the song demands.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tips">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Quick Tips for Better Runs</h2>
+        <p>A few habits can make difficult songs easier to read without changing the basic controls.</p>
+      </div>
+      <div class="tips">
+        <div class="tip"><strong>Listen before you rush</strong><span>The instrumental and vocals often hint at when dense note sequences are about to begin.</span></div>
+        <div class="tip"><strong>Read patterns, not single arrows</strong><span>Recognizing repeated shapes reduces the amount of last-second reaction needed.</span></div>
+        <div class="tip"><strong>Keep a steady hand position</strong><span>Use the same comfortable keys throughout a song so your fingers do not have to reposition.</span></div>
+        <div class="tip"><strong>Replay difficult sections</strong><span>Familiarity with a song's transitions can matter as much as raw reaction speed.</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><strong>FNFBeat</strong> — An independent informational page for rhythm-game fans. Friday Night Funkin' belongs to its respective creators.</div>
+</footer>
+</body>
+</html>
